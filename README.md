@@ -1,4 +1,5 @@
-# K-nacci-Words-Python
+# Knacci-Utils
+## Introduction to $k$-nacci Words and Curves
 This is a library for k-nacci word curves in python.
 The k-nacci word is a string over the alphabet <img src="/tex/f2fa7155e973c035d80aa7aa0b483d0f.svg?invert_in_darkmode&sanitize=true&sanitize=true" align=middle width=40.18272059999999pt height=24.65753399999998pt/> generated recursively via the rules:
 
@@ -19,3 +20,30 @@ The words are drawn via turtle-graphics (a non-branching Lindenmyer System, if y
   (5) If <img src="/tex/d68a336214fdd11b1c8b0fa26a9d3b43.svg?invert_in_darkmode&sanitize=true" align=middle width=48.924151649999985pt height=24.65753399999998pt/>, return to step 2.
 
 To generate the fractal, we take each curve and rotate/scale it so that the endpoint of the curve touches <img src="/tex/1e5ba49ae6981862f61b4d510dcf29af.svg?invert_in_darkmode&sanitize=true" align=middle width=36.52973609999999pt height=24.65753399999998pt/>. Then we take the limit of the modified curve as <img src="/tex/5b1d0e6cb391219b21d53d5848fe80a9.svg?invert_in_darkmode&sanitize=true" align=middle width=51.87587954999999pt height=14.15524440000002pt/>.
+
+## Code Snippets
+Usage examples of the files included in this repo:
+
+### WordGen.py
+
+With Knacci Utils, you can obtain all types of $k$-nacci words easily. Get $f_{(k,n)}$ via the command `f(k,n)`. For example,
+
+```python
+from WordGen import f
+
+for n in range(1,10):
+    print(n, f(2,n))
+  ```
+  
+ You can also get $t_{(k,n)}$ via the command `t(k,n)`.
+ 
+ ### Debugging.py
+ 
+ It is easy to test hypotheses about the drawing rule with `random_word`, which returns a random binary word of any arbitrary length. There are a few other tools.
+ ```python
+ w = random_word(100)       #makes a random binary word of length 100
+ is_alphabet_valid(w)       #checks to see if the alphabet is a subset of {'0','1'}
+ ```
+ 
+ ### AngleAndVector.py
+ 
