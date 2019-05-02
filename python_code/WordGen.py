@@ -69,5 +69,3 @@ def has_overlap(prefix:str, suffix:str):
             print(prefix[:-i],suffix[:i],suffix[i:])
         
         
-
-has_overlap(t(2,7),f(2,5))  
