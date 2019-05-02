@@ -24,17 +24,3 @@ def is_alphabet_valid(word:str):
 
 def random_word(n:int):
     return "".join(choice(["0","1"]) for _ in range(n))
-
-def k_nacci_size(k:int, n:int):
-    '''
-    Gives proper length of f(k,n)
-    '''
-    if n==1:
-        return 1
-    if n==2:
-        if k <= 2:
-            return 2
-        else:
-            return k
-    else:
-        return k_nacci_size(k,n-1)*(k) + k_nacci_size(k,n-2)
