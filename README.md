@@ -41,9 +41,45 @@ for n in range(1,10):
  
  It is easy to test hypotheses about the drawing rule with `random_word`, which returns a random binary word of any arbitrary length. There are a few other tools.
  ```python
+ from Debugging import random_word
  w = random_word(100)       #makes a random binary word of length 100
  is_alphabet_valid(w)       #checks to see if the alphabet is a subset of {'0','1'}
  ```
  
- ### AngleAndVector.py
+ ### AngleAndVertex.py
+This gives you $a(w)$, draws pictures of the word curves, and lets you have a list of vertices in the word curve.
+  ```python
+  
+ from math import pi
+ from WordGen import f
+ from AngleAndVertex import alpha_coeff, vertices, draw_me, end_position
  
+ alpha_coeff(f(3,5))        #gives the coefficient of alpha that the drawer is pointing after drawing the word, related to net angle.
+ vertices(f(2,5), pi/3)     #a list of vertices in the word curve given some drawing angle
+ draw_me(f(2,11), pi/3)     #plt.plot(), plt.show() the vertices in the word curve.
+ end_position(f(2,17), pi/3)      #gives both the coefficient of alpha after drawing and also the last vertex in the word curve
+ ```
+ 
+ ### WordSplit.py
+ For discovering word generation patterns. There also exist some word comparison generators, not sure what I was doing with those.
+ 
+ ```python
+ from WordGen import f
+ from WordSplit import split_to
+ 
+ # outputs all possible word decompositions given the subwords in the dict.
+ split_to(f(2,7), {"f(2,6)":f(2,6), "f(2,5)":f(2,5), "f(2,4)":f(2,4), "f(2,3)":f(2,3)}) 
+ ```
+ 
+ ### HighLevelEndpoints.py
+ Determine the endpoints of a composition of words. This file uses numpy.
+ ```python
+ from math import pi
+ from WordGen import f, t
+ from HighLevelEndpoints import wordmat, ep_for_words
+ 
+ # z(w) + wordmat(w).z(v) = z(wv)
+ wordmat(f(2,7), pi/3) #gives the translation/rotation matrix for drawing another word curve after drawing a word.
+ 
+ ep_for_words(pi/2, f(2,7),f(2,8),t(2,5)) #gives the endpoint and drawing angle coefficient after drawing all words given.
+ ```
