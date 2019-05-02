@@ -28,19 +28,3 @@ def ep_for_words(alpha, *w):
         
         sumw += wk
     return sumz, sumc  
-        
-
-print("evens")
-for n in range(1,30):
-    wrong=0
-    for i in range(100):
-            
-        w1,w2 = (random_word(n) for i in range(2))
-        
-        testz, tc = ep_for_words(pi/3,w1,w2)
-        baselinez,bc = end_position(w1 + w2, pi/3)
-        if sum([(testz[i]-baselinez[i])**2 for i in range(2)])**.5 >= 0.01:
-            wrong+=1
-            print("wrong: "+str(n), testz,baselinez,bc, sep="\t")
-    print(wrong)
-    print("*"*30,n+1,)
