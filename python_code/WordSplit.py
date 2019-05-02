@@ -123,22 +123,3 @@ def split_to(origwd:str, subwds:dict):
             q.put(si)
         
     return finished
-
-'''
-'f(n-2p) ':f(k,n-2*p),
-'t(n-2p) ':t(k,n-2*p),
-'''
-k = 3
-n = 7
-p = 2
-results = split_to(f(k,n),
-    {
-     'f(n-p) ':f(k,n-p),
-     't(n-p) ':t(k,n-p),
-     '<f(n-p)-f(n-p-2)> ':,
-     'h(n-p)':h(k,n-p)
-     }
-    )
-print("\n"*10)
-for decomp in results:
-    print(decomp)
