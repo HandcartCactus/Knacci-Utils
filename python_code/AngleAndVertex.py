@@ -176,4 +176,3 @@ def f2n_analysis(max_n=18):
         absprev2 = absprev1
         absprev1 = absvec(pos)
              
-draw_me(f(3,17),pi/3)
