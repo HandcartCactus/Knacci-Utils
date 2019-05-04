@@ -1,13 +1,13 @@
 # Knacci-Utils
 ## Introduction to <img src="/tex/63bb9849783d01d91403bc9a5fea12a2.svg?invert_in_darkmode&sanitize=true&sanitize=true" align=middle width=9.075367949999992pt height=22.831056599999986pt/>-nacci Words and Curves
-This is a library for k-nacci word curves in python.
+This is a library for k-nacci words and word curves in python.
 The k-nacci word is a string over the alphabet <img src="/tex/f2fa7155e973c035d80aa7aa0b483d0f.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true&sanitize=true" align=middle width=40.18272059999999pt height=24.65753399999998pt/> generated recursively via the rules:
 
 <p align="center"><img src="/tex/86a1c703632dc6fa5ac0815e8d219aba.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true&sanitize=true" align=middle width=178.09934669999998pt height=20.6229144pt/></p>
 
 <p align="center"><img src="/tex/ca99b418bd1b70837cb0187a1dbc8966.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true&sanitize=true" align=middle width=170.06911019999998pt height=22.127716049999997pt/></p>
 
-The words are drawn via turtle-graphics (a non-branching Lindenmyer System, if you like) via a drawing rule:
+The word curves are drawn via turtle-graphics (a non-branching Lindenmyer System, if you like) via a drawing rule:
 
   (1) Initalize: declare the turning angle <img src="/tex/c745b9b57c145ec5577b82542b2df546.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true" align=middle width=10.57650494999999pt height=14.15524440000002pt/>, set the inital drawing angle to <img src="/tex/1444c1b272ccbb529a05e07463acf386.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true" align=middle width=17.06819399999999pt height=14.15524440000002pt/>, and place the turtle on <img src="/tex/e660f3b58b414524ec6f827411021073.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true" align=middle width=36.52973609999999pt height=24.65753399999998pt/>. Set the index <img src="/tex/77a3b857d53fb44e33b53e4c8b68351a.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true" align=middle width=5.663225699999989pt height=21.68300969999999pt/> to 1.
 
