@@ -21,39 +21,6 @@ The word curves are drawn via turtle-graphics (a non-branching Lindenmyer System
 
 To generate the fractal, we take each curve and rotate/scale it so that the endpoint of the curve touches <img src="/tex/1e5ba49ae6981862f61b4d510dcf29af.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true" align=middle width=36.52973609999999pt height=24.65753399999998pt/>. Then we take the limit of the modified curve as <img src="/tex/5b1d0e6cb391219b21d53d5848fe80a9.svg?invert_in_darkmode&sanitize=true&sanitize=true&sanitize=true" align=middle width=51.87587954999999pt height=14.15524440000002pt/>.
 
-## Pictures of the 2-nacci word curve:
-
-### Plain Images
-n = 2
-<img src="2nacci_2.png" align=middle/>
-
-n=3
-<img src="2nacci_3.png" align=middle/>
-
-n=4
-<img src="2nacci_4.png" align=middle/>
-
-n=5
-<img src="2nacci_5.png" align=middle/>
-
-n=17
-<img src="2nacci_17.png" align=middle/>
-
-### Periodicity mod 2 in the 2-nacci words (odd)
-hm
-<img src="per2nacci_5.png" align=middle/>
-
-<img src="per2nacci_7.png" align=middle/>
-
-<img src="per2nacci_9.png" align=middle/>
-
- <img src="per2nacci_11.png" align=middle/>
- 
- <img src="per2nacci_13.png" align=middle/>
- 
- <img src="per2nacci_15.png" align=middle/>
-
-
 
 ## Code Snippets
 Usage examples of the files included in this repo:
@@ -127,3 +94,37 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  #gives the endpoint and drawing angle coefficient after drawing all words given.
  ep_for_words(pi/2, f(2,7),f(2,8),t(2,5)) 
  ```
+ 
+ ## Pictures of the 2-nacci word curve:
+
+### Plain Images
+n = 2
+<img src="2nacci_2.png" align=middle/>
+
+n=3
+<img src="2nacci_3.png" align=middle/>
+
+n=4
+<img src="2nacci_4.png" align=middle/>
+
+n=5
+<img src="2nacci_5.png" align=middle/>
+
+n=17
+<img src="2nacci_17.png" align=middle/>
+
+### Periodicity mod 2 in the 2-nacci words (odd)
+hm
+
+<img src="per2nacci_5.png" align=middle/>
+
+<img src="per2nacci_7.png" align=middle/>
+
+<img src="per2nacci_9.png" align=middle/>
+
+ <img src="per2nacci_11.png" align=middle/>
+ 
+ <img src="per2nacci_13.png" align=middle/>
+ 
+ <img src="per2nacci_15.png" align=middle/>
+
