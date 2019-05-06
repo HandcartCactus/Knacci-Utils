@@ -54,10 +54,18 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  from WordGen import f
  from AngleAndVertex import alpha_coeff, vertices, draw_me, end_position
  
- alpha_coeff(f(3,5))        #gives the coefficient of alpha that the drawer is pointing after drawing the word, related to net angle.
- vertices(f(2,5), pi/3)     #a list of vertices in the word curve given some drawing angle
- draw_me(f(2,11), pi/3)     #plt.plot(), plt.show() the vertices in the word curve.
- end_position(f(2,17), pi/3)      #gives both the coefficient of alpha after drawing and also the last vertex in the word curve
+ #gives the coefficient of alpha that the drawer is 
+ # pointing after drawing the word, related to net angle.
+ alpha_coeff(f(3,5))
+ 
+ #a list of vertices in the word curve given some drawing angle
+ vertices(f(2,5), pi/3)
+ 
+ #plt.plot(), plt.show() the vertices in the word curve.
+ draw_me(f(2,11), pi/3)    
+ 
+ #gives both the coefficient of alpha after drawing and also the last vertex in the word curve
+ end_position(f(2,17), pi/3)      
  ```
  
  ### WordSplit.py
@@ -79,7 +87,12 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  from HighLevelEndpoints import wordmat, ep_for_words
  
  # z(w) + wordmat(w).z(v) = z(wv)
- wordmat(f(2,7), pi/3) #gives the translation/rotation matrix for drawing another word curve after drawing a word.
- 
- ep_for_words(pi/2, f(2,7),f(2,8),t(2,5)) #gives the endpoint and drawing angle coefficient after drawing all words given.
+ #gives the translation/rotation matrix for 
+ # drawing another word curve after drawing a word.
+ wordmat(f(2,7), pi/3) 
+ #gives the endpoint and drawing angle coefficient after drawing all words given.
+ ep_for_words(pi/2, f(2,7),f(2,8),t(2,5)) 
  ```
+ 
+ ## Pictures of the 2-nacci word curve:
+ <img src="per2nacci_15" align=middle width=100pt height=40pt/>
