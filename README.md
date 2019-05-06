@@ -95,4 +95,4 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  ```
  
  ## Pictures of the 2-nacci word curve:
- <img src="per2nacci_15.png" align=middle width=100pt height=40pt/>
+ <img src="per2nacci_15.png" align=middle/>
