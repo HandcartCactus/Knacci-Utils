@@ -97,7 +97,6 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  
  ## Pictures of the 2-nacci word curve:
 ### Periodicity mod 2 in the 2-nacci words (odd)
-hm
 
 <img src="per2nacci_5.png" align=middle/>
 
