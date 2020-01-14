@@ -95,7 +95,8 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  ep_for_words(pi/2, f(2,7),f(2,8),t(2,5)) 
  ```
  
- ## Pictures of the 2-nacci word curve:
+ ## Impact: 
+Aided validation of the IFS that makes the 2-nacci word fractal. We used combinatorial tools to observe recurring patterns in word-decompositions.
 ### Periodicity mod 2 in the 2-nacci words (odd)
 
 <img src="per2nacci_5.png" align=middle/>
