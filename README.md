@@ -96,7 +96,7 @@ This gives you <img src="/tex/f031da32bd07d67f527ef5841e8436fe.svg?invert_in_dar
  ```
  
  ## Impact: 
-Aided validation of the IFS that makes the 2-nacci word fractal. We used combinatorial tools to observe recurring patterns in word-decompositions.
+Aided validation of the main claim in our research paper, about the fractal dimension of the iterated function system that makes the 2-nacci word fractal. We used combinatorial tools to observe recurring patterns in word-decompositions, translated those into linear algebra mappings, and used traditional tools to compute the Hausdorff dimension.
 ### Periodicity mod 2 in the 2-nacci words (odd)
 
 <img src="per2nacci_5.png" align=middle/>
